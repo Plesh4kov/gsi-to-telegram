@@ -1,5 +1,8 @@
 {
+  "name": "gsi-to-telegram",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.0.0"
   }
 }

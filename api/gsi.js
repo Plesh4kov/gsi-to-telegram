@@ -28,8 +28,8 @@ export default async function handler(req, res) {
 
 // Функция для отправки сообщения в Telegram
 async function sendTelegramMessage(message) {
-    const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN; // Задаем переменные через Vercel
-    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+    const BOT_TOKEN = "bot7539206735:AAHVdQJ_Vexkw-dUQQxbtOADjbSBBeD7D5Y"; // Ваш токен
+    const CHAT_ID = "-1002291227993"; // Ваш Chat ID
 
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
     const payload = {
@@ -44,3 +44,4 @@ async function sendTelegramMessage(message) {
         console.error("Ошибка отправки сообщения в Telegram:", error.message);
     }
 }
+
