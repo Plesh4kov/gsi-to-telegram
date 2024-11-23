@@ -1,10 +1,17 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/gsi.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/gsi",
       "methods": ["POST"],
-      "dest": "/api/gsi.js"
+      "dest": "api/gsi.js"
     }
-  ]
+  ],
+  "outputDirectory": "./"
 }
