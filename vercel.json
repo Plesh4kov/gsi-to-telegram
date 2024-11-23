@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/gsi", "methods": ["POST"], "dest": "/api/gsi.js" }
+    ]
+  }
+  
